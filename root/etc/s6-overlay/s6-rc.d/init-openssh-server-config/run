@@ -22,6 +22,15 @@ else
     echo "sudo is disabled."
 fi
 
+MOTD_FILE="/etc/motd"
+
+# Check if WELCOME_MESSAGE is set and not empty
+if [[ -n "$WELCOME_MESSAGE" ]]; then
+    echo "$WELCOME_MESSAGE" > "$MOTD_FILE"
+else
+    echo "Welcome to OpenSSH Server!" > "$MOTD_FILE"
+fi
+
 if [[ -n "$USER_PASSWORD_FILE" ]] && [[ -f "$USER_PASSWORD_FILE" ]]; then
     USER_PASSWORD=$(cat "$USER_PASSWORD_FILE")
     echo "User password is retrieved from file."
