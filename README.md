@@ -2,40 +2,25 @@
 <!-- Please read https://github.com/linuxserver/docker-openssh-server/blob/master/.github/CONTRIBUTING.md -->
 [![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)](https://linuxserver.io)
 
-[![Blog](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=Blog)](https://blog.linuxserver.io "all the things you can do with our containers including How-To guides, opinions and much more!")
-[![Discord](https://img.shields.io/discord/354974912613449730.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=Discord&logo=discord)](https://discord.gg/YWrKVTn "realtime support / chat with the community and the team.")
-[![Discourse](https://img.shields.io/discourse/https/discourse.linuxserver.io/topics.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=discourse)](https://discourse.linuxserver.io "post on our community forum.")
-[![Fleet](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=Fleet)](https://fleet.linuxserver.io "an online web interface which displays all of our maintained images.")
-[![GitHub](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=GitHub&logo=github)](https://github.com/linuxserver "view the source for all of our repositories.")
-[![Open Collective](https://img.shields.io/opencollective/all/linuxserver.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=Supporters&logo=open%20collective)](https://opencollective.com/linuxserver "please consider helping us by either donating or contributing to our budget")
 
-The [LinuxServer.io](https://linuxserver.io) team brings you another container release featuring:
+[![GitHub](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=GitHub&logo=github)](https://github.com/kokofixcomputers "view the source for all of our repositories.")
 
-* regular and timely application updates
-* easy user mappings (PGID, PUID)
-* custom base image with s6 overlay
-* weekly base OS updates with common layers across the entire LinuxServer.io ecosystem to minimise space usage, down time and bandwidth
-* regular security updates
 
-Find us at:
+This is a fork by kokofixcomputers to introduce more customizability and features. 
 
-* [Blog](https://blog.linuxserver.io) - all the things you can do with our containers including How-To guides, opinions and much more!
-* [Discord](https://discord.gg/YWrKVTn) - realtime support / chat with the community and the team.
-* [Discourse](https://discourse.linuxserver.io) - post on our community forum.
-* [Fleet](https://fleet.linuxserver.io) - an online web interface which displays all of our maintained images.
-* [GitHub](https://github.com/linuxserver) - view the source for all of our repositories.
-* [Open Collective](https://opencollective.com/linuxserver) - please consider helping us by either donating or contributing to our budget
+Find me at:
 
-# [linuxserver/openssh-server](https://github.com/linuxserver/docker-openssh-server)
+
+* [GitHub](https://github.com/kokofixcomputers) - view the source for all of our repositories.
+
+# [kokofixcomputers/openssh-server](https://github.com/kokofixcomputers/docker-openssh-server-fork)
 
 [![Scarf.io pulls](https://scarf.sh/installs-badge/linuxserver-ci/linuxserver%2Fopenssh-server?color=94398d&label-color=555555&logo-color=ffffff&style=for-the-badge&package-type=docker)](https://scarf.sh)
-[![GitHub Stars](https://img.shields.io/github/stars/linuxserver/docker-openssh-server.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/linuxserver/docker-openssh-server)
-[![GitHub Release](https://img.shields.io/github/release/linuxserver/docker-openssh-server.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/linuxserver/docker-openssh-server/releases)
-[![GitHub Package Repository](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=GitHub%20Package&logo=github)](https://github.com/linuxserver/docker-openssh-server/packages)
-[![GitLab Container Registry](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=GitLab%20Registry&logo=gitlab)](https://gitlab.com/linuxserver.io/docker-openssh-server/container_registry)
-[![Quay.io](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=Quay.io)](https://quay.io/repository/linuxserver.io/openssh-server)
-[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/openssh-server.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=pulls&logo=docker)](https://hub.docker.com/r/linuxserver/openssh-server)
-[![Docker Stars](https://img.shields.io/docker/stars/linuxserver/openssh-server.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=stars&logo=docker)](https://hub.docker.com/r/linuxserver/openssh-server)
+[![GitHub Stars](https://img.shields.io/github/stars/kokofixcomputers/docker-openssh-server-fork.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/kokofixcomputers/docker-openssh-server-fork)
+[![GitHub Release](https://img.shields.io/github/release/kokofixcomputers/docker-openssh-server-fork.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/kokofixcomputers/docker-openssh-server-fork/releases)
+[![GitHub Package Repository](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=GitHub%20Package&logo=github)](https://github.com/kokofixcomputers/docker-openssh-server-fork/packages)
+[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/openssh-server.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=pulls&logo=docker)](https://hub.docker.com/r/kokofixcomputers/docker-openssh-server-fork)
+[![Docker Stars](https://img.shields.io/docker/stars/linuxserver/openssh-server.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=stars&logo=docker)](https://hub.docker.com/r/kokofixcomputers/docker-openssh-server-fork)
 [![Jenkins Build](https://img.shields.io/jenkins/build?labelColor=555555&logoColor=ffffff&style=for-the-badge&jobUrl=https%3A%2F%2Fci.linuxserver.io%2Fjob%2FDocker-Pipeline-Builders%2Fjob%2Fdocker-openssh-server%2Fjob%2Fmaster%2F&logo=jenkins)](https://ci.linuxserver.io/job/Docker-Pipeline-Builders/job/docker-openssh-server/job/master/)
 [![LSIO CI](https://img.shields.io/badge/dynamic/yaml?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=CI&query=CI&url=https%3A%2F%2Fci-tests.linuxserver.io%2Flinuxserver%2Fopenssh-server%2Flatest%2Fci-status.yml)](https://ci-tests.linuxserver.io/linuxserver/openssh-server/latest/index.html)
 
@@ -177,7 +162,7 @@ Containers are configured using parameters passed at runtime (such as those abov
 | `-e USER_PASSWORD=password` | Optionally set a sudo password for `linuxserver.io`, the ssh user. If this or `USER_PASSWORD_FILE` are not set but `SUDO_ACCESS` is set to true, the user will have passwordless sudo access. |
 | `-e USER_PASSWORD_FILE=/path/to/file` | Optionally specify a file that contains the password. This setting supersedes the `USER_PASSWORD` option (works with docker secrets). |
 | `-e USER_NAME=linuxserver.io` | Optionally specify a user name (Default:`linuxserver.io`) |
-| `-e WELCOME_MESSAGE=Hi | Optionally specify a welcome message
+| `-e WELCOME_MESSAGE=Hi` | Optionally specify a welcome message
 | `-e LOG_STDOUT=` | Set to `true` to log to stdout instead of file. |
 | `-v /config` | Contains all relevant configuration files. |
 
@@ -340,27 +325,3 @@ docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
 ```
 
 Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64`.
-
-## Versions
-
-* **24.11.24:** - Move sshd_config to /config/sshd/sshd_config.
-* **31.05.24:** - Rebase to Alpine 3.20.
-* **04.05.24:** - Display the SSH host public keys every time the container starts.
-* **09.03.24:** - Rebase to Alpine 3.19.
-* **12.06.23:** - Rebase to Alpine 3.18, deprecate armhf. As announced [here](https://www.linuxserver.io/blog/a-farewell-to-arm-hf)
-* **05.03.23:** - Rebase to Alpine 3.17.
-* **18.10.22:** - Fix wrong behavior of password/passwordless sudo
-* **11.10.22:** - Rebase to Alpine 3.16, migrate to s6v3.
-* **15.09.22:** - add netcat-openbsd with support for proxies.
-* **18.07.22:** - Fix service perms to comply with upgrade to s6 v3.
-* **16.04.22:** - Rebase to alpine 3.15.
-* **16.11.21:** - Add PUBLIC_KEY_URL option
-* **28.06.21:** - Rebasing to alpine 3.14. Add support for PAM.
-* **10.02.21:** - Rebasing to alpine 3.13. Add openssh-client for scp.
-* **21.10.20:** - Implement s6-log for openssh, which adds local timestamps to logs and can be used with a log parser like fail2ban.
-* **20.10.20:** - Set umask for sftp.
-* **01.06.20:** - Rebasing to alpine 3.12.
-* **18.01.20:** - Add key generation script.
-* **13.01.20:** - Add openssh-sftp-server.
-* **19.12.19:** - Rebasing to alpine 3.11.
-* **17.10.19:** - Initial Release.
