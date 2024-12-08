@@ -22,5 +22,4 @@ jobs:
       with:
         context: .
         push: true
-        platforms: linux/amd64  # Specify AMD64 architecture
         tags: kokofixcomputers/docker-openssh-server-fork:latest  # Replace with your image name
