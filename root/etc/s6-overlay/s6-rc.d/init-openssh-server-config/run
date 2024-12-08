@@ -39,26 +39,6 @@ fi
 USER_PASSWORD=${USER_PASSWORD:-$(< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c"${1:-8}";echo;)}
 echo "${USER_NAME}:${USER_PASSWORD}" | chpasswd
 
-apk update
-apk add python3
-apk add py3-pip
-python3 -m venv /etc/pyvenv
-. /etc/pyenv/bin/activate
-
-# Download Dependency installer
-
-# Check if the environment variable SETUP_SCRIPT_DOWNLOAD is set
-if [ -n "$SETUP_SCRIPT_DOWNLOAD" ]; then
-    # Download the script to /tmp
-    curl -o /tmp/setup_script.sh "$SETUP_SCRIPT_DOWNLOAD"
-    
-    # Make the downloaded script executable
-    chmod +x /tmp/setup_script.sh
-    
-    # Run the downloaded script
-    /tmp/setup_script.sh
-fi
-
 # Migration
 if [[ -f /config/ssh_host_keys/sshd_config ]]; then
     mv /config/ssh_host_keys/sshd_config /config/sshd/sshd_config
