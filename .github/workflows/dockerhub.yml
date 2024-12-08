@@ -33,5 +33,5 @@ jobs:
       with:
         context: .  # Context for the build; typically the root of your repository
         push: true   # Push the image to the registry after building
-        tags: kokofixcomputers/docker-openssh-server-fork:${{ github.ref_name }}-${{ matrix.platform }}  # Tagging with release version and platform
-        platforms: ${{ matrix.platform }}  # Use the platform from the matrix strategy
+        tags: kokofixcomputers/docker-openssh-server-fork:latest  # Universal tag
+        platforms: ${{ matrix.platform }}  # Use the platform from the matrix
