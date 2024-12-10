@@ -79,6 +79,8 @@ fi
 if [[ "$PASSWORD_ACCESS" == "true" ]]; then
     sed -i '/^#PasswordAuthentication/c\PasswordAuthentication yes' /config/sshd/sshd_config
     sed -i '/^PasswordAuthentication/c\PasswordAuthentication yes' /config/sshd/sshd_config
+    sed -i '/^#PasswordAuthentication/c\PasswordAuthentication yes' /etc/ssh/sshd_config
+    sed -i '/^PasswordAuthentication/c\PasswordAuthentication yes' /etc/ssh/sshd_config
     chown root:"${USER_NAME}" \
         /etc/shadow
     echo "User/password ssh access is enabled."
