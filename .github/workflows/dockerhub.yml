@@ -37,4 +37,4 @@ jobs:
           platforms: linux/amd64,linux/arm64
           tags: |
             kokofixcomputers/docker-openssh-server-fork:${{ github.sha }}
-            kokofixcomputers/docker-openssh-server-forklatest
+            kokofixcomputers/docker-openssh-server-fork:latest
