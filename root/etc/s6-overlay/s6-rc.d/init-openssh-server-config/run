@@ -185,3 +185,5 @@ chmod 750 \
     /config/sshd
 chmod 640 \
     /config/sshd/sshd_config
+
+service ssh start
