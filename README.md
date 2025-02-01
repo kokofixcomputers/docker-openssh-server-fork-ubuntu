@@ -6,7 +6,7 @@
 [![GitHub](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=GitHub&logo=github)](https://github.com/kokofixcomputers "view the source for all of our repositories.")
 
 
-This is a fork by kokofixcomputers to introduce more customizability and features. 
+This is a fork by kokofixcomputers to introduce more customizability and features. (for ubuntu)
 
 Find me at:
 
