@@ -4,10 +4,10 @@ on:
   release:
     types: [created]  # Trigger the workflow when a release is created
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
     tags: [ 'v*.*.*' ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "master" ]
 
 jobs:
   build:
