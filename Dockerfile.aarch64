@@ -2,8 +2,8 @@
 
 FROM ghcr.io/linuxserver/baseimage-ubuntu:jammy
 
-# Set version label
-ARG BUILD_DATE
+# set version label
+ARG BUILD_DATE="2025-02-01T12:00:00Z"
 ARG VERSION
 ARG OPENSSH_RELEASE
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
@@ -11,24 +11,28 @@ LABEL maintainer="aptalca"
 
 RUN \
   echo "**** install runtime packages ****" && \
-  apt-get update && \
-  apt-get install --no-install-recommends -y \
+  apt-get update && apt-get install --no-install-recommends -y \
     logrotate \
     nano \
     netcat-openbsd \
-    sudo \
-    openssh-server && \
+    sudo && \
+  echo "**** install openssh-server ****" && \
+  if [ -z ${OPENSSH_RELEASE+x} ]; then \
+    OPENSSH_RELEASE=$(apt-cache madison openssh-server | awk '{print $3}' | head -n 1); \
+  fi && \
+  apt-get install -y \
+    openssh-client=${OPENSSH_RELEASE} \
+    openssh-server=${OPENSSH_RELEASE} \
+    openssh-sftp-server=${OPENSSH_RELEASE} && \
+  printf "Linuxserver.io version: ${VERSION}\nBuild-date: ${BUILD_DATE}" > /build_version && \
   echo "**** setup openssh environment ****" && \
   sed -i 's/#PasswordAuthentication yes/PasswordAuthentication no/g' /etc/ssh/sshd_config && \
   usermod --shell /bin/bash abc && \
-  printf "Linuxserver.io version: ${VERSION}\nBuild-date: ${BUILD_DATE}" > /build_version && \
   rm -rf /var/lib/apt/lists/*
 
-# Add local files
+# add local files
 COPY /root /
 
 EXPOSE 2222
 
 VOLUME /config
-
-CMD ["/usr/sbin/sshd", "-D"]
