@@ -36,3 +36,5 @@ EXPOSE 2222
 VOLUME /config
 
 CMD ["/usr/sbin/sshd", "-D"]
+
+ENTRYPOINT ["/usr/bin/s6-svscan", "/run/service"]
